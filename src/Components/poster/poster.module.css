@@ -1,0 +1,98 @@
+.poster_cover {
+  background-image: url("/Poster.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding: 0 98px; */
+  max-width: 100%;
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  gap: 10px;
+}
+
+.ratings div {
+  display: flex;
+}
+
+.ratings span {
+  color: #fff;
+}
+
+.movie_details_wrapper {
+  margin-top: 70px;
+  margin-left: 104px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie_details_wrapper h3 {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.johnWick {
+  width: 404px;
+}
+
+.johnWick p {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.imdb {
+  margin-right: 10px;
+}
+.movie_summary_wrapper {
+  width: 302px;
+  height: 72px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.movie_summary_wrapper p {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  width: 302px;
+}
+
+.play_btn {
+  width: 150px;
+  display: flex;
+  padding: 6px 16px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  background: var(--rose-700, #be123c);
+  margin-top: 15px;
+  margin-bottom: 150px;
+}
+
+.play_btn span {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .poster_cover {
+    /* width: 100%; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
