@@ -14,12 +14,12 @@ import Link from "next/link";
 const apiKey = '3937a247bfadf3156c5d41854d7fdedf'
 // const url2 =  'https://api.themoviedb.org/3/movie/top_rated'
 
-const url = `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`;
 
 export default function TopRatedMovies() {
-
+  
   const [movies, setMovieDB] = useState([]);
-
+  
+  const url = `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`;
   useEffect(() => {
     async function getTenRatedMovies() {
       try {
