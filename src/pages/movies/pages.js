@@ -10,7 +10,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+// const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+const apiKey = '3937a247bfadf3156c5d41854d7fdedf'
 // const url2 =  'https://api.themoviedb.org/3/movie/top_rated'
 
 const url = `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`;
@@ -56,12 +57,12 @@ export default function TopRatedMovies() {
 
       <div className={styles.movies_wrapper}>
         <Suspense fallback ={<h1>Loading...</h1>}>
-        {movies.map((movie, index) => {
+        {movies.map((movie) => {
           return (
             <Link
               href={`movies/${movie.id}`}
               className={styles["no_text_decoration"]}
-            key={movie.id}
+              key={movie.id}
             >
               <div
                 // keys={index}

@@ -12,7 +12,10 @@ export default function Movie() {
   const { movie_id } = router.query;
 
   const [movie, setMovie] = useState(null);
-  const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+  // const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+  
+  const apiKey = "3937a247bfadf3156c5d41854d7fdedf"
+
   const movieUrl = `https://api.themoviedb.org/3/movie/${movie_id}?api_key=${apiKey}`;
 
   useEffect(() => {
