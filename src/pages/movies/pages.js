@@ -42,7 +42,7 @@ export default function TopRatedMovies() {
   return (
     <section className={styles.movies_main_container}>
       <div className={styles.featuredAndSeeMore}>
-        <h4>Top 10 rated movies</h4>
+        <h4>Featured Movies</h4>
         <div>
           <span>See More</span>
           <Image

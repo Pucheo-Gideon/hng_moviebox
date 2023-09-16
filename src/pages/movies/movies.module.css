@@ -1,12 +1,9 @@
 .featuredAndSeeMore{
     display: flex;
-    /* width: 1244px; */
     justify-content: space-between;
     align-items: center;
     margin: 0 100px;
-    /* gap: 50rem; */
     margin-top: 50px;
-    /* border: red solid 2px; */
     
 }
 
@@ -17,17 +14,9 @@
     gap: 5px;
 }
 
-/* .movies_main_container {
-    border: red solid 2px;
-    margin-top: 50px;
-} */
+
 
 .movies_wrapper{
-    /* display: inline-flex;
-    align-items: flex-start;
-    flex-direction: column; 
-    /* grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);  */
     gap: 10px;
     padding: 20px 20px;
     display: grid;
@@ -77,14 +66,7 @@
     justify-content: center;
     align-items: center;
 }
-    /* .movies_wrapper{
-   display: grid;
-   grid-template-columns: repeat(1, 1fr);
-   grid-template-rows: repeat(1, 1fr);
-   gap: 30px;
  
-    
-} */
 
 .movie-card{    
     display: flex;
@@ -93,6 +75,11 @@
     justify-content: space-between;
     align-items: center;
 }
+}
+
+.featuredAndSeeMore{
+    
+    gap: 100px;
 }
 
 /* Styles for single Movie */

@@ -1,13 +1,12 @@
 .movie-container{
     display: flex;
     gap:15px;
-    /* border: red solid 2px; */
+
 }
 
 .movie_info_wrapper{
     margin-top: 30px;
     width: 1132px;
-    /* border: red solid; */
 }
 
 .movie_title{
@@ -129,7 +128,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px; 
-    /* border: 1px solid red; */
+ 
 }
 
 .class:hover{
