@@ -61,12 +61,13 @@ export default function TopRatedMovies() {
             <Link
               href={`movies/${movie.id}`}
               className={styles["no_text_decoration"]}
+            key={movie.id}
             >
               <div
                 // keys={index}
                 data-testid="movie-card"
                 className={styles["movie-card"]}
-                keys={movie.id}
+               
               >
                 <Image
                   src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}

@@ -29,7 +29,7 @@ export default function Movie() {
     if (movie_id) {
       getMovie();
     }
-  }, [movie_id]);
+  }, [movie_id, movieUrl]);
 
   if (!movie) {
     return <h1>Loading....</h1>;
