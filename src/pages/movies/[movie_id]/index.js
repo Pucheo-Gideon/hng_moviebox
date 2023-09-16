@@ -57,23 +57,23 @@ export default function Movie() {
           <div data-testid="routes_wrapper" className={styles["route_wrapper"]}>
             <Link href={"/"} className={styles["no_text_decoration"]}>
               <div data-testid="class" className={styles["class"]}>
-                <Image src={"/Home.svg"} width={30} height={30} />
+                <Image src={"/Home.svg"} width={30} height={30}  alt="home icon"/>
                 <h3>Home</h3>
               </div>
             </Link>
 
             <div data-testid="class" className={styles["class"]}>
-              <Image src={"/Movie Projector.svg"} width={30} height={30} />
+              <Image src={"/Movie Projector.svg"} width={30} height={30} alt="movie projector icon" />
               <h3>Movies</h3>
             </div>
 
             <div data-testid="class" className={styles["class"]}>
-              <Image src={"/TV Show.svg"} width={30} height={30} />
+              <Image src={"/TV Show.svg"} width={30} height={30} alt="tv show icon" />
               <h3>TV Series</h3>
             </div>
 
             <div data-testid="class" className={styles["class"]}>
-              <Image src={"/Calendar.svg"} width={30} height={30} />
+              <Image src={"/Calendar.svg"} width={30} height={30} alt="calender icon"/>
               <h3>Upcoming</h3>
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function Movie() {
           </div>
 
           <div data-testid="class" className={styles["class"]}>
-            <Image src={"/Logout.svg"} width={30} height={30} />
+            <Image src={"/Logout.svg"} width={30} height={30} alt="logout icon"/>
             <h3>Log out</h3>
           </div>
         </div>
@@ -97,6 +97,7 @@ export default function Movie() {
         <div
           data_testid="movie_info_wrapper"
           className={styles["movie_info_wrapper"]}
+          keys={movie.id}
         >
           <Suspense fallback={<h1>Loading....</h1>}>
             <Image
@@ -139,7 +140,7 @@ export default function Movie() {
                   data-testid="movie-runtime"
                   className={styles["movie-runtime"]}
                 >
-                  {movie.runtime} minutes
+                  {movie.runtime}min
                 </span>
                 <span data_testid="action" className={styles["action"]}>
                   <p>Action</p>
@@ -188,6 +189,7 @@ export default function Movie() {
                   height={30}
                   data_testid="expand_arrow"
                   className={styles["expand_arrow"]}
+                  alt="expand arrow icon"
                 />
               </div>
             </div>
@@ -195,7 +197,7 @@ export default function Movie() {
             <div data-testid="box2_left" className={styles["box2_left"]}>
               <div data-testid="movie-votes" className={styles["movie-votes"]}>
                 <div data-testid="star-vote" className={styles["star-vote"]}>
-                  <Image src="/StarMovie.svg" width={20} height={20} />
+                  <Image src="/StarMovie.svg" width={20} height={20} alt="star icon"/>
                   <span>{movie.vote_average.toFixed(1)}</span>
                     <div data_testid="stroke" className={styles['stroke']}>|</div>
                 </div>
@@ -217,10 +219,11 @@ export default function Movie() {
                   alt="tickets"
                   width={25}
                   height={25}
+          
                 />
               <p>More watch options</p>
               </div>
-              <Image src={'/Rectangle 37.svg' } data_testid="three_image" className={styles['three_image']} width={360} height={230}/>
+              <Image src={'/Rectangle 37.svg' } alt="rectangle icon"data_testid="three_image" className={styles['three_image']} width={360} height={230}/>
             </div>
 
           </div>

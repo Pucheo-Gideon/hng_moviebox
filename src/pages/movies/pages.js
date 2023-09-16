@@ -63,7 +63,7 @@ export default function TopRatedMovies() {
               className={styles["no_text_decoration"]}
             >
               <div
-                key={index}
+                // keys={index}
                 data-testid="movie-card"
                 className={styles["movie-card"]}
                 keys={movie.id}
